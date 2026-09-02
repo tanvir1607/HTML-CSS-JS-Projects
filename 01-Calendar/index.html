@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    >
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Images/calendar.webp" type="image/png">
+    <title>2026</title>
+
+</head>
+<body >
+     <!-- Script.js -->
+     <script src="./script.js"></script>
+    <div class="container">
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <div class="nav-left">
+                <img class="cal-icon" src="./Images/cal-icon-left.png" alt="Calender Logo">
+                <div class="nav-left-mid">
+                    <div class="nav-left-year">
+                        <span class="nav-year-char">2</span>
+                        <span class="nav-year-char">0</span>
+                        <span class="nav-year-char">2</span>
+                        <span class="nav-year-char">6</span>
+                    </div>
+                    <div class="nav-left-text">
+                        <span class="nav-text-char">C</span>
+                        <span class="nav-text-char">A</span>
+                        <span class="nav-text-char">L</span>
+                        <span class="nav-text-char">E</span>
+                        <span class="nav-text-char">N</span>
+                        <span class="nav-text-char">D</span>
+                        <span class="nav-text-char">E</span>
+                        <span class="nav-text-char">R</span>
+                    </div>
+                </div>
+                <img class="cal-icon" src="./Images/cal-icon-right.png" alt="Calender Logo">
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-magnifying-glass fa-width-auto"></i>
+                <i class="fa-solid fa-moon" onclick="toggleTheme()"></i>
+                <i class="fa-regular fa-clock fa-width-auto"></i>
+                <i class="fa-solid fa-plus fa-width-auto"></i>
+            </div>
+        </nav>
+
+
+        <!-- Months -->
+        <main class="months">
+
+            <!-- January -->
+            <section class="month" id="January">
+                <h2 class="month-name">January</h2>
+                <div class="weekdays">
+                    <div  class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day off-day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day off-day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day off-day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day off-day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day off-day">30</div>
+                    <div class="day">31</div>
+                </div>
+            </section>
+
+            <!-- February -->
+            <section class="month" id="February">
+                <h2 class="month-name">February</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day off-day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day off-day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day off-day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day off-day">27</div>
+                    <div class="day">28</div>
+                </div>
+            </section>
+
+            <!-- March -->
+            <section class="month" id="March">
+                <h2 class="month-name">March</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day off-day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day off-day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day off-day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day off-day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                </div>
+            </section>
+
+            <!-- April -->
+            <section class="month" id="April">
+                <h2 class="month-name">April</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day off-day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day off-day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day off-day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day off-day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </section>
+
+            <!-- May -->
+            <section class="month" id="May">
+                <h2 class="month-name">May</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day off-day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day off-day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day off-day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day off-day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day off-day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                </div>
+            </section>
+
+            <!-- June -->
+            <section class="month" id="June">
+                <h2 class="month-name">June</h2>
+                <div class="weekdays">
+                    <div class="day">SUN</div>
+                    <div class="day">SAT</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day off-day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day off-day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day off-day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day off-day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </section>
+
+            <!-- July -->
+            <section class="month" id="July">
+                <h2 class="month-name">July</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day off-day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day off-day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day off-day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day off-day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day off-day">31</div>
+                </div>
+            </section>
+
+            <!-- August -->
+            <section class="month" id="August">
+                <h2 class="month-name">August</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day off-day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day off-day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day off-day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day off-day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                </div>
+            </section>
+
+            <!-- September -->
+            <section class="month" id="September">
+                <h2 class="month-name">September</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day off-day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day off-day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day off-day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day off-day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </section>
+
+            <!-- October -->
+            <section class="month" id="October">
+                <h2 class="month-name">October</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day off-day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day off-day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day off-day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day off-day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day off-day">30</div>
+                    <div class="day">31</div>
+                </div>
+            </section>
+            
+            <!-- November -->
+            <section class="month" id="November">
+                <h2 class="month-name">November</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day off-day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day off-day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day off-day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day off-day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </section>
+            
+            <!-- December -->
+            <section class="month" id="December">
+                <h2 class="month-name">December</h2>
+                <div class="weekdays">
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day off-day">FRI</div>
+                </div>
+                <div class="days">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day off-day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day off-day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day off-day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day off-day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

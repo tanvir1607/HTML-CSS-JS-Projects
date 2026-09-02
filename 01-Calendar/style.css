@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    font-family: "Poppins", sans-serif;
+    border: 10px solid rgb(234, 241, 254);
+    border-radius: 10px 10px 5px 5px;
+    overflow: hidden;
+}
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+
+/* Nav Bar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(234, 241, 254);
+    padding: 10px;
+}
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav-left-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-left-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.nav-left-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav-year-char {
+    font-size: 3.5rem;
+    color: #173681;
+    font-weight: 900;
+}
+.nav-text-char {
+    font-size: 1rem;
+    color: #173681;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.nav-right > i {
+    font-size: 25px;
+}
+
+/* Main */
+.months {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.month {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 5px 5px;
+    overflow: hidden; /* Important */
+    row-gap: 10px;
+    transition: 0.5s ease, box-shadow 0.5s ease; 
+}
+.month:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.50);
+}
+.month-name {
+    text-align: center;
+    padding: 5px;
+}
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+}
+.weekdays > div {
+    font-weight: bold;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+.day {
+    border-radius: 12px;
+    padding: 8px 5px;
+    width: 80%;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.day:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.off-day {
+    color: red;
+    font-weight: bold;
+}
+
+#January {
+    border: 1px solid #d0e4fd;
+}
+#January > .month-name,
+#January .day {
+    background-color: #d0e4fd;
+}
+
+#February {
+    border:1px solid #cae9ed;
+}
+#February > .month-name,
+#February .day {
+    background-color: #cae9ed;
+}
+
+#March {
+    border:1px solid #def1cf;
+}
+#March > .month-name,
+#March .day {
+    background-color: #def1cf;
+}
+
+#April {
+    border:1px solid #feefbe;
+}
+#April > .month-name,
+#April .day {
+    background-color: #feefbe;
+}
+
+#May {
+    border:1px solid #e5d9fd;
+}
+#May > .month-name,
+#May .day {
+    background-color: #e5d9fd;
+}
+
+#June {
+    border:1px solid #fed6b0;
+}
+#June > .month-name,
+#June .day {
+    background-color: #fed6b0;
+}
+
+#July {
+    border:1px solid #ffd4d7;
+}
+#July > .month-name,
+#July .day {
+    background-color: #ffd4d7;
+}
+
+#August {
+    border:1px solid #d2e5fe;
+}
+#August > .month-name,
+#August .day {
+    background-color: #d2e5fe;
+}
+
+#September {
+    border:1px solid #daf0c5;
+}
+#September > .month-name,
+#September .day {
+    background-color: #daf0c5;
+}
+
+#October {
+    border:1px solid #feefbe;
+}
+#October > .month-name,
+#October .day {
+    background-color: #feefbe;
+}
+
+#November {
+    border:1px solid #e5dafd;
+}
+#November > .month-name,
+#November .day {
+    background-color: #e5dafd;
+}
+
+#December {
+    border:1px solid #cceaed;
+}
+#December > .month-name,
+#December .day {
+    background-color: #cceaed;
+}
